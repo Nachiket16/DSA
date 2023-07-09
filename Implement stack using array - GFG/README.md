@@ -39,3 +39,22 @@ You are required to complete two methods&nbsp;<strong>push() and pop(). </strong
 1 &lt;= Q &lt;= 100<br>
 1 &lt;= x &lt;= 100</span></p>
 </div>
+         
+``` JAVA
+class MyStack
+{  
+	int arr[] = new int[1000];
+	int counter = -1;
+    void push(int a)
+	{
+	    arr[++counter]=a;
+	} 
+	int pop()
+	{
+      if(counter == -1){
+          return -1;
+      }
+      return arr[counter--];
+	}
+}
+```
