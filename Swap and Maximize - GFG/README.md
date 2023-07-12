@@ -33,3 +33,45 @@ This is a function problem. You don't need to take any input, as it is already a
 <p><span style="font-size:18px"><strong>Constraints:</strong><br>
 2 ≤ N ≤ 10<sup>5</sup></span></p>
 </div>
+
+``` JAVA
+    long maxSum(long arr[] ,int n)
+    {
+        Arrays.sort(arr);
+        int i=0;
+        int f=n-1;
+        int count=0;
+        long sum =0;
+        long a[] = new long[n];
+        
+        while(i<=f){
+            if(count%2==0){
+                a[count++] =arr[i++];
+            }else{
+                a[count++] = arr[f--];
+            }
+        }
+        
+        for(int j=0; j<n-1; j++){
+            sum = sum + Math.abs(a[j]-a[j+1]);
+        }
+        sum = sum + Math.abs(a[n-1]-a[0]);
+        return sum;
+    }
+```
+```JAVA
+long maxSum(long a[] ,int n)
+    {
+        Arrays.sort(a);
+        long sum=0;
+// Alt Approach 1
+        for(int i=0;i<n/2;i++){
+            sum+=2*Math.abs(a[i]-a[n-i-1]);
+        }
+// Alt Approach 2
+        for(int i=0; i<n;i++){
+            sum += Math.abs(arr[i]-arr[n-i-1]);
+        }
+       return sum;
+    }
+```
