@@ -43,3 +43,21 @@ You do not have to read input. Your task is to complete the function&nbsp;<stron
 0 &lt;= nums<sub>i</sub> &lt;= 200</span><br>
 <span style="font-size:18px">Array&nbsp;may contain duplicates.</span></p>
 </div>
+
+``` java
+public static long[] productExceptSelf(int nums[], int n) 
+	{ 
+        // code here
+        long prod[] = new long[n];
+        for(int i =0 ;i<n ; i++){
+            long p = 1;
+            for(int j = 0 ; j<n; j++){
+                if(j!=i){
+                    p=p*nums[j];
+                }
+            }
+            prod[i]=p;
+        }
+        return prod;
+	}
+```
