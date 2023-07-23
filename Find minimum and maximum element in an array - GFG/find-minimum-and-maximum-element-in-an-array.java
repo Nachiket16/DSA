@@ -1,7 +1,6 @@
 //{ Driver Code Starts
 //Initial Template for Java
 
-import java.util.*;
 import java.lang.*;
 import java.io.*;
 
@@ -15,7 +14,7 @@ class Pair
     }  
 }
 
-class GFG {
+class Kth_smallest {
 	public static void main(String[] args) throws IOException
 	{
 	        BufferedReader br =
@@ -32,7 +31,7 @@ class GFG {
                 a[i] = Long.parseLong(inputLine[i]);
             }
             
-            Compute obj = new Compute();
+            ComputeK obj = new ComputeK();
             Pair product = obj.getMinMax(a, n); 
             System.out.println(product.first+" "+product.second);
             
@@ -57,7 +56,7 @@ class GFG {
     }  
 } */
 
-class Compute 
+class ComputeK
 {
     static Pair getMinMax(long a[], long n)  
     {

@@ -76,7 +76,7 @@ class Array {
             {
                 arr[i]=Long.parseLong(a1[i]);
             }
-            GFG ob=new GFG();
+            Kth_smallest ob=new Kth_smallest();
             //ArrayList<Long> ans=ob.smallestDifferenceTriplet(a,b,c,n);
             long ans=ob.maxSum(arr,n);
             System.out.println(ans);

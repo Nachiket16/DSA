@@ -23,7 +23,7 @@ class GFG {
             }
             int k = Integer.parseInt(br.readLine().trim());
             
-            Compute obj = new Compute();
+            ComputeK obj = new ComputeK();
             long answer[] = obj.printFirstNegativeInteger(a, n, k);
             int sz = answer.length;
             

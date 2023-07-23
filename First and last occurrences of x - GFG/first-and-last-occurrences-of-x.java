@@ -69,7 +69,7 @@ class Array {
             for (int i = 0; i < n; i++) {
                 arr[i] = Long.parseLong(a1[i]);
             }
-            GFG ob = new GFG();
+            Kth_smallest ob = new Kth_smallest();
             ArrayList<Long> ans=ob.find(arr,n,x);
             System.out.println(ans.get(0)+" "+ans.get(1));
         }

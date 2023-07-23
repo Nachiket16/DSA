@@ -1,7 +1,6 @@
 //{ Driver Code Starts
 //Initial Template for Java
 
-import java.util.*;
 import java.lang.*;
 import java.io.*;
 
@@ -22,7 +21,7 @@ class GFG {
                 a[i] = Integer.parseInt(inputLine[i]);
             }
             
-            Compute obj = new Compute();
+            ComputeK obj = new ComputeK();
             obj.rotate(a, n);
             
             StringBuilder output = new StringBuilder();

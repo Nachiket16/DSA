@@ -5,7 +5,7 @@
 
 import java.io.*;
 import java.util.*;
-class GFG {
+class kth {
 	public static void main (String[] args) {
 		Scanner sc=new Scanner(System.in);
 		PrintWriter out = new PrintWriter(System.out);
